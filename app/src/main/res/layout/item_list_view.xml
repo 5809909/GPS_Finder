@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="4dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_label_date_and_time"
+                style="@style/style_list_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_date_time"/>
+
+            <TextView
+                android:id="@+id/text_view_label_latitude"
+                style="@style/style_list_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_latitude"/>
+
+            <TextView
+                android:id="@+id/text_view_label_longitude"
+                style="@style/style_list_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_longitude"/>
+
+            <TextView
+                android:id="@+id/text_view_label_accurancy"
+                style="@style/style_list_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_accurancy"/>
+
+
+            <TextView
+                android:id="@+id/text_view_label_address"
+                style="@style/style_list_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_address"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/text_view_date_and_time"
+                style="@style/style_list_label_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/list_view_text_loading"/>
+
+
+            <TextView
+                android:id="@+id/text_view_latitude"
+                style="@style/style_list_label_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/list_view_text_loading"/>
+
+
+            <TextView
+                android:id="@+id/text_view_longitude"
+                style="@style/style_list_label_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/list_view_text_loading"/>
+
+
+            <TextView
+                android:id="@+id/text_view_accurancy"
+                style="@style/style_list_label_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/list_view_text_loading"/>
+
+
+            <TextView
+                android:id="@+id/text_view_address"
+                style="@style/style_list_label_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="@string/list_view_text_loading"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_label_address"/>
+    </LinearLayout>
+
+
+</LinearLayout>

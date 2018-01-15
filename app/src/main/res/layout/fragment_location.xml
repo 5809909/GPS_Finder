@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:id="@+id/location_fragment_layout"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.github.a5809909.gps_finder.Fragment.LocationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_view_label_date_and_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_label_date_time"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_date_and_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/text_view_date_time"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryText"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_view_cell_id"
+                style="@style/style_text_view_primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_cell_id"/>
+            <TextView
+                android:id="@+id/text_view_latitude"
+                style="@style/style_text_view_primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_latitude"/>
+
+            <TextView
+                android:id="@+id/text_view_longitude"
+                style="@style/style_text_view_primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_longitude"/>
+
+            <TextView
+                android:id="@+id/text_view_accuracy"
+                style="@style/style_text_view_primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_accurancy"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginLeft="4dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_cell_id"
+                style="@style/style_text_view_primary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_view_cell_id"/>
+
+            <TextView
+                android:id="@+id/text_latitude"
+                style="@style/style_text_view_primary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_view_latitude"/>
+
+            <TextView
+                android:id="@+id/text_longitude"
+                style="@style/style_text_view_primary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_view_longitude"/>
+
+            <TextView
+                android:id="@+id/text_accuracy"
+                style="@style/style_text_view_primary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_view_accuracy"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_lac"
+                style="@style/style_text_view_primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_lac"/>
+
+            <TextView
+                android:id="@+id/text_view_mcc"
+                style="@style/style_text_view_primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_label_mcc"/>
+
+            <TextView
+                android:id="@+id/text_view_mnc"
+                style="@style/style_text_view_primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/text_label_mnc"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_lac"
+                style="@style/style_text_view_primary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_view_lac"/>
+
+            <TextView
+                android:id="@+id/text_mcc"
+                style="@style/style_text_view_primary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_view_mcc"/>
+
+            <TextView
+                android:id="@+id/text_mnc"
+                style="@style/style_text_view_primary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_view_mnc"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="4dp">
+        <TextView
+            android:gravity="left"
+            android:id="@+id/text_view_country"
+            style="@style/style_text_view_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_label_address"/>
+
+        <TextView
+            android:id="@+id/text_address"
+            style="@style/style_text_view_primary_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:maxLines="10"
+            android:text="@string/text_view_address"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+

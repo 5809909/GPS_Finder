@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+    <group android:id="@+id/grp1">
+    <item
+        android:id="@+id/nav_show_point"
+        android:icon="@drawable/map_marker_radius"
+        android:title="Show Point"/>
+    <item
+        android:id="@+id/nav_database"
+        android:icon="@drawable/database"
+        android:title="DataBase"/>
+    <item
+        android:id="@+id/nav_show_map"
+        android:icon="@drawable/google_maps"
+        android:title="Show Map"/>
+    <item
+        android:id="@+id/nav_images"
+        android:icon="@drawable/image"
+        android:title="Images"/>
+
+    <item
+        android:id="@+id/nav_weather"
+        android:icon="@drawable/weather_partlycloudy"
+        android:title="Weather"/>
+    </group>
+
+    <group android:id="@+id/grp2">
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/settings"
+        android:title="Settings"/>
+
+    </group>
+</menu>
+
